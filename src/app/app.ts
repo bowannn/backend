@@ -4,7 +4,7 @@ import { Request, Response } from "express";
 import cors from "cors";
 import { ServerApp } from "../core/server";
 import { dbConnection } from "./database/mongo/connect";
-import { CONFIG } from "../config";
+import { CONFIG } from "../core/CONFIG";
 import { RoutesApi } from "./routes/routes";
 
 // Implementación principal del servidor Express.
@@ -43,7 +43,7 @@ export class Server implements ServerApp {
 
     // Ruta raíz de prueba para verificar que el servidor está activo
     this.app.get("/", (_req: Request, res: Response) => {
-      res.send("Hello World");
+      res.send("Hola Mundo");
     });
 
     // Inicia el servidor HTTP y comienza a escuchar en el puerto configurado

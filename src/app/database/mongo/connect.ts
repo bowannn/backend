@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { CONFIG } from "../../../config";
+import { CONFIG } from "../../../core/CONFIG";
 
 // Establece la conexión con MongoDB usando Mongoose.
 // Si la conexión falla, lanza un error para interrumpir el inicio de la aplicación.

@@ -1,7 +1,7 @@
 // Importa el paquete jsonwebtoken y su tipo JwtPayload para trabajar con JWT
 import jwt, { JwtPayload }  from 'jsonwebtoken';
 // Importa la configuración global, donde está la clave secreta JWT
-import { CONFIG } from '../../config';
+import { CONFIG } from '../../core/CONFIG';
 
 // Define una interfaz para extender el JwtPayload y asegurar que el payload personalizado contiene una propiedad id de tipo string
 interface CustomJwtPayload extends JwtPayload {
